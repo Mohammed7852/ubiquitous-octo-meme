@@ -6,16 +6,23 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage
-  ],
+    ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
+    IonicModule.forRoot(MyApp),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatAutocompleteModule
+    ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
